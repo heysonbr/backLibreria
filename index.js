@@ -47,6 +47,24 @@ app.post('/books', async (req, res) => {
 });
 
 
+app.post('/bookss', async (req, res) => {
+    try {
+        const books = req.body;
+        const writeBatch = db.batch();
+
+        books.forEach((book) => {
+            const docRef = db.collection('books').doc();
+            writeBatch.set(docRef, book);
+        });
+
+        await writeBatch.commit();
+        res.status(200).json({ message: 'Books added successfully' });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+
 app.put('/books/:id', async (req, res) => {
     try {
         const book = req.body;
