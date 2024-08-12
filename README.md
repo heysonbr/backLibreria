@@ -12,7 +12,9 @@ Este proyecto es una API REST que utiliza Firebase Firestore como base de datos 
 ## Configuración
 
 1. Clona este repositorio en tu máquina local.
-2. Instala las dependencias del proyecto con `npm install`.
+2. Instala las dependencias del proyecto con `npm install` son estas:
+   `npm install express`
+   `npm install firebase-admin` .
 3. Crea un proyecto en Firebase y obtén tus credenciales de servicio.
 4. Crea un archivo `.env` en la raíz del proyecto y añade tus credenciales de Firebase como variables de entorno. Aquí tienes un ejemplo de cómo debería ser tu archivo `.env`:
    IREBASE_PROJECT_ID="your-firebase-project-id" FIREBASE_PRIVATE_KEY_ID="your-firebase-private-key-id" FIREBASE_KEY="your-firebase-key" FIREBASE_CLIENT_EMAIL="your-firebase-client-email" FIREBASE_CLIENT_ID="your-firebase-client-id" FIREBASE_AUTH_URI="your-firebase-auth-uri" FIREBASE_TOKEN_URI="your-firebase-token-uri" FIREBASE_AUTH_PROVIDER_X509_CERT_URL="your-firebase-auth-provider-x509-cert-url" FIREBASE_CLIENT_X509_CERT_URL="your-firebase-client-x509-cert-url"
