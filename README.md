@@ -6,6 +6,7 @@ Este proyecto es una API REST que utiliza Firebase Firestore como base de datos 
 
 - Node.js
 - npm
+- express
 - Cuenta de Firebase
 
 ## Configuración
